@@ -19,83 +19,83 @@
     <body>
         <!-- Container principale  -->
         <div class="container py-5">
-        <!-- Titolo principale -->
-        <h1 class="text-center text-white mb-4">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+            <!-- Titolo principale -->
+            <h1 class="text-center text-white mb-4">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
 
-        <!-- Card contenente il form -->
-        <div class="card shadow rounded-4 mb-4">
-            <div class="card-body p-4">
-            <!-- Riga per dividere gli input in colonne -->
-            <div class="row g-4">
-                <!-- Campo nome passeggero -->
-                <div class="col-md-4">
-                <label for="name" class="form-label fw-bold text-danger">Nome e Cognome</label>
-                <input
-                    type="text"
-                    id="name"
-                    class="form-control text-center"
-                    placeholder="Inserisci nome e cognome"
-                />
+            <!-- Card contenente il form -->
+            <div class="card shadow rounded-4 mb-4">
+                <div class="card-body p-4">
+                        <!-- Riga per dividere gli input in colonne -->
+                        <div class="row g-4">
+                            <!-- Campo nome passeggero -->
+                            <div class="col-md-4">
+                                <label for="name" class="form-label fw-bold text-danger">Nome e Cognome</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    class="form-control text-center"
+                                    placeholder="Inserisci nome e cognome"
+                                />
+                            </div>
+
+                            <!-- Campo km da percorrere -->
+                            <div class="col-md-4">
+                                <label for="km" class="form-label fw-bold text-danger">Km da percorrere</label>
+                                <input
+                                    type="number"
+                                    id="km"
+                                    class="form-control text-center"
+                                    placeholder="Inserisci i km"
+                                />
+                            </div>
+
+                            <!-- Campo età -->
+                            <div class="col-md-4">
+                                <label for="age" class="form-label fw-bold text-danger">Età del passeggero</label>
+                                <input
+                                    type="number"
+                                    id="age"
+                                    class="form-control text-center"
+                                    placeholder="Inserisci l'età"
+                                />
+                            </div>
+                        </div>
+
+                        <!-- Sezione pulsanti -->
+                        <div class="text-center mt-4">
+                            <button id="generate-btn" class="btn btn-light text-danger fw-bold me-2">
+                            Genera
+                            </button>
+
+                            <button id="reset-btn" class="btn btn-light text-danger fw-bold">
+                            Annulla
+                            </button>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Campo km da percorrere -->
-                <div class="col-md-4">
-                <label for="km" class="form-label fw-bold text-danger">Km da percorrere</label>
-                <input
-                    type="number"
-                    id="km"
-                    class="form-control text-center"
-                    placeholder="Inserisci i km"
-                />
+                <!-- Card risultato -->
+                <div class="card shadow rounded-4 d-none" id="ticket-section">
+                    <div class="card-body p-4">
+                        <h2 class="mb-4">Il tuo biglietto</h2>
+
+                        <!-- Riga con intestazioni -->
+                        <div class="row bg-secondary-subtle fw-bold py-2 border">
+                            <div class="col-md-3">Nome passeggero</div>
+                            <div class="col-md-3">Offerta</div>
+                            <div class="col-md-3">Carrozza</div>
+                            <div class="col-md-3">Prezzo finale</div>
+                        </div>
+
+                        <!-- Riga con i dati generati via JavaScript -->
+                        <div class="row py-3 border border-top-0 align-items-center" id="ticket-data">
+                            <div class="col-md-3" id="passenger-name">-</div>
+                            <div class="col-md-3" id="offer-type">-</div>
+                            <div class="col-md-3" id="carriage-number">-</div>
+                            <div class="col-md-3" id="final-price">-</div>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Campo età -->
-                <div class="col-md-4">
-                <label for="age" class="form-label fw-bold text-danger">Età del passeggero</label>
-                <input
-                    type="number"
-                    id="age"
-                    class="form-control text-center"
-                    placeholder="Inserisci l'età"
-                />
-                </div>
-            </div>
-
-            <!-- Sezione pulsanti -->
-            <div class="text-center mt-4">
-                <button id="generate-btn" class="btn btn-light text-danger fw-bold me-2">
-                Genera
-                </button>
-
-                <button id="reset-btn" class="btn btn-light text-danger fw-bold">
-                Annulla
-                </button>
-            </div>
-            </div>
-        </div>
-
-        <!-- Card risultato -->
-        <div class="card shadow rounded-4 d-none" id="ticket-section">
-            <div class="card-body p-4">
-            <h2 class="mb-4">Il tuo biglietto</h2>
-
-            <!-- Riga con intestazioni -->
-            <div class="row bg-secondary-subtle fw-bold py-2 border">
-                <div class="col-md-3">Nome passeggero</div>
-                <div class="col-md-3">Offerta</div>
-                <div class="col-md-3">Carrozza</div>
-                <div class="col-md-3">Prezzo finale</div>
-            </div>
-
-            <!-- Riga con i dati generati via JavaScript -->
-            <div class="row py-3 border border-top-0 align-items-center" id="ticket-data">
-                <div class="col-md-3" id="passenger-name">-</div>
-                <div class="col-md-3" id="offer-type">-</div>
-                <div class="col-md-3" id="carriage-number">-</div>
-                <div class="col-md-3" id="final-price">-</div>
-            </div>
-            </div>
-        </div>
         </div>
 
         <script src="./js/script.js"></script>

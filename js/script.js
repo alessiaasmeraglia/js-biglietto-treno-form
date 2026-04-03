@@ -1,19 +1,19 @@
 'use strict';
 
 // Recupero degli elementi del DOM
-const nameInput = document.getElementById("name");
-const kmInput = document.getElementById("km");
-const ageInput = document.getElementById("age");
+const nameInput = document.querySelector("#name");
+const kmInput = document.querySelector("#km");
+const ageInput = document.querySelector("#age");
 
-const generateBtn = document.getElementById("generate-btn");
-const resetBtn = document.getElementById("reset-btn");
+const generateBtn = document.querySelector("#generate-btn");
+const resetBtn = document.querySelector("#reset-btn");
 
-const ticketSection = document.getElementById("ticket-section");
+const ticketSection = document.querySelector("#ticket-section");
 
-const passengerNameElement = document.getElementById("passenger-name");
-const offerTypeElement = document.getElementById("offer-type");
-const carriageNumberElement = document.getElementById("carriage-number");
-const finalPriceElement = document.getElementById("final-price");
+const passengerNameElement = document.querySelector("#passenger-name");
+const offerTypeElement = document.querySelector("#offer-type");
+const carriageNumberElement = document.querySelector("#carriage-number");
+const finalPriceElement = document.querySelector("#final-price");
 
 // Evento click sul bottone "Genera"
 generateBtn.addEventListener("click", function () {
