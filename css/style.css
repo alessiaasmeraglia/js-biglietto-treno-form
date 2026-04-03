@@ -1,0 +1,48 @@
+/* Reset base di margini e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stile generale del body */
+body {
+    background-color: #b91450;
+    font-family: Arial, sans-serif;
+}
+
+/* Altezza minima per occupare tutto lo schermo */
+body {
+    min-height: 100vh;
+}
+
+/* Personalizzazione degli input */
+.form-control {
+    border: 1px solid #b91450;
+}
+
+/* Quando l'input è selezionato */
+.form-control:focus {
+    border-color: #b91450;
+    box-shadow: 0 0 0 0.2rem rgba(185, 20, 80, 0.25);
+}
+
+/* Personalizzazione dei pulsanti */
+.btn-light {
+    border: 1px solid #b91450;
+}
+
+/* Effetto hover sui pulsanti */
+.btn-light:hover {
+    background-color: #b91450;
+    color: white !important;
+    border-color: #ffffff;
+}
+
+/* Stile dedicato al nome passeggero nella tabella */
+#passenger-name {
+    background-color: #808080;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+}
